@@ -1,0 +1,130 @@
+@import "reset";
+
+#header {
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+  background: rgba(0, 0, 0, 0.24);
+  backdrop-filter: blur(2px);
+
+  .header-general {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    &__nav {
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      text-transform: uppercase;
+      color: #fcfcfc;
+      padding: 0 40px;
+
+      &:hover {
+        color: yellow;
+      }
+
+    }
+  }
+}
+
+
+#hero {
+  background: url("../img/lov.png") no-repeat center/cover;
+  min-height: 100vh;
+
+   .hero-general {
+
+    &__title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 300px;
+
+      h1 {
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 60px;
+        line-height: 60px;
+        color: #FFFFFF;
+
+      }
+
+    }
+
+     &__btn{
+
+       button{
+         @include btn()
+       }
+     }
+
+    &__img {
+      position: absolute;
+      top: 60px;
+      right: 0;
+      z-index: 99999;
+    }
+
+    }
+  }
+
+#contact{
+  .contact-general{
+    position: absolute;
+    width: 100px;
+    height: 200px;
+    left: 0px;
+    top: 750px;
+    background: linear-gradient(180deg, rgba(248, 248, 249, 0.26) 66.24%, rgba(255, 255, 255, 0.38) 100%);
+  }
+}
+
+#footer{
+
+  .footer-general{
+
+    &__par{
+      display: flex;
+      flex-direction: row-reverse;
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 40px;
+      color: #373737;
+
+    }
+  }
+}
+
+
+#footer1{
+  .footer1-general{
+    &__tex{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+padding: 10px;
+
+      h1 {
+        padding: 40px;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        color: #373737;
+      }
+    }
+    h2{
+
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 40px;
+      color: #FF3939;
+    }
+  }
+}
+

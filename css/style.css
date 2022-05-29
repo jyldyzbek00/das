@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#header {
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+  background: rgba(0, 0, 0, 0.24);
+  backdrop-filter: blur(2px);
+}
+#header .header-general {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#header .header-general__nav {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #fcfcfc;
+  padding: 0 40px;
+}
+#header .header-general__nav:hover {
+  color: yellow;
+}
+
+#hero {
+  background: url("../img/lov.png") no-repeat center/cover;
+  min-height: 100vh;
+}
+#hero .hero-general__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 300px;
+}
+#hero .hero-general__title h1 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 60px;
+  color: #FFFFFF;
+}
+#hero .hero-general__btn button {
+  position: absolute;
+  width: 272px;
+  height: 90px;
+  left: 111px;
+  top: 500px;
+  background: linear-gradient(148.24deg, #032658 1.03%, #1B6CE1 60.39%);
+  box-shadow: 0 97px 90px rgba(7, 0, 59, 0.12);
+  transition: 0.4s;
+  cursor: pointer;
+}
+#hero .hero-general__btn button:hover {
+  transform: scale(1.1);
+  background: rgba(0, 0, 0, 0.24);
+  border: 1px solid #ffffff;
+}
+#hero .hero-general__img {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  z-index: 99999;
+}
+
+#contact .contact-general {
+  position: absolute;
+  width: 100px;
+  height: 200px;
+  left: 0px;
+  top: 750px;
+  background: linear-gradient(180deg, rgba(248, 248, 249, 0.26) 66.24%, rgba(255, 255, 255, 0.38) 100%);
+}
+
+#footer .footer-general__par {
+  display: flex;
+  flex-direction: row-reverse;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  color: #373737;
+}
+
+#footer1 .footer1-general__tex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+}
+#footer1 .footer1-general__tex h1 {
+  padding: 40px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  color: #373737;
+}
+#footer1 .footer1-general h2 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  color: #FF3939;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+
+}
+
+a{
+  text-decoration: none;
+}
+
+.container{
+  width: 90%;
+  margin: 0 auto;
+}
+@mixin btn {
+  position: absolute;
+  width: 272px;
+  height: 90px;
+  left: 111px;
+  top: 500px;
+  background: linear-gradient(148.24deg, #032658 1.03%, #1B6CE1 60.39%);
+  box-shadow: 0 97px 90px rgba(7, 0, 59, 0.12);
+  transition: .4s;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.1);
+    background: rgb(0, 0, 0, 0.24);
+    border: 1px solid #ffffff;
+  }
+}
